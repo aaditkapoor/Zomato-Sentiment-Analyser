@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE1AD5EC1EF476360055BF4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AD5EB1EF476360055BF4A /* AppDelegate.swift */; };
+		DE1AD5EE1EF476360055BF4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AD5ED1EF476360055BF4A /* ViewController.swift */; };
+		DE1AD5F11EF476360055BF4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE1AD5EF1EF476360055BF4A /* Main.storyboard */; };
+		DE1AD5F31EF476360055BF4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE1AD5F21EF476360055BF4A /* Assets.xcassets */; };
+		DE1AD5F61EF476360055BF4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE1AD5F41EF476360055BF4A /* LaunchScreen.storyboard */; };
+		DE1AD5FE1EF4788D0055BF4A /* URLCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AD5FD1EF4788D0055BF4A /* URLCreator.swift */; };
+		DE1AD6001EF47EE70055BF4A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AD5FF1EF47EE70055BF4A /* SearchViewController.swift */; };
+		FEB363C2F0622B5F7D3C2E06 /* Pods_ZomatoAnalyser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06453700DF7C90E793F015E1 /* Pods_ZomatoAnalyser.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06453700DF7C90E793F015E1 /* Pods_ZomatoAnalyser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZomatoAnalyser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF42DDF665F85CC9F0DF8C4B /* Pods-ZomatoAnalyser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZomatoAnalyser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZomatoAnalyser/Pods-ZomatoAnalyser.debug.xcconfig"; sourceTree = "<group>"; };
+		DE1AD5E81EF476360055BF4A /* ZomatoAnalyser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZomatoAnalyser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE1AD5EB1EF476360055BF4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE1AD5ED1EF476360055BF4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE1AD5F01EF476360055BF4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE1AD5F21EF476360055BF4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE1AD5F51EF476360055BF4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE1AD5F71EF476360055BF4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE1AD5FD1EF4788D0055BF4A /* URLCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLCreator.swift; sourceTree = "<group>"; };
+		DE1AD5FF1EF47EE70055BF4A /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		F92490594FA2F8AFD8B56FDC /* Pods-ZomatoAnalyser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZomatoAnalyser.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZomatoAnalyser/Pods-ZomatoAnalyser.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE1AD5E51EF476360055BF4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEB363C2F0622B5F7D3C2E06 /* Pods_ZomatoAnalyser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D175A1F18313FFB68570AAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06453700DF7C90E793F015E1 /* Pods_ZomatoAnalyser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE1AD5DF1EF476360055BF4A = {
+			isa = PBXGroup;
+			children = (
+				DE1AD5EA1EF476360055BF4A /* ZomatoAnalyser */,
+				DE1AD5E91EF476360055BF4A /* Products */,
+				EF5971EBBDE2515C84B98DC5 /* Pods */,
+				1D175A1F18313FFB68570AAE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DE1AD5E91EF476360055BF4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE1AD5E81EF476360055BF4A /* ZomatoAnalyser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE1AD5EA1EF476360055BF4A /* ZomatoAnalyser */ = {
+			isa = PBXGroup;
+			children = (
+				DE1AD5EB1EF476360055BF4A /* AppDelegate.swift */,
+				DE1AD5ED1EF476360055BF4A /* ViewController.swift */,
+				DE1AD5EF1EF476360055BF4A /* Main.storyboard */,
+				DE1AD5F21EF476360055BF4A /* Assets.xcassets */,
+				DE1AD5F41EF476360055BF4A /* LaunchScreen.storyboard */,
+				DE1AD5F71EF476360055BF4A /* Info.plist */,
+				DE1AD5FD1EF4788D0055BF4A /* URLCreator.swift */,
+				DE1AD5FF1EF47EE70055BF4A /* SearchViewController.swift */,
+			);
+			path = ZomatoAnalyser;
+			sourceTree = "<group>";
+		};
+		EF5971EBBDE2515C84B98DC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF42DDF665F85CC9F0DF8C4B /* Pods-ZomatoAnalyser.debug.xcconfig */,
+				F92490594FA2F8AFD8B56FDC /* Pods-ZomatoAnalyser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE1AD5E71EF476360055BF4A /* ZomatoAnalyser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE1AD5FA1EF476360055BF4A /* Build configuration list for PBXNativeTarget "ZomatoAnalyser" */;
+			buildPhases = (
+				B147F2EB7E82D71CF35138BA /* [CP] Check Pods Manifest.lock */,
+				DE1AD5E41EF476360055BF4A /* Sources */,
+				DE1AD5E51EF476360055BF4A /* Frameworks */,
+				DE1AD5E61EF476360055BF4A /* Resources */,
+				05AFEEBE3D10786864775B61 /* [CP] Embed Pods Frameworks */,
+				114BF4B45C4F53E9B2B60C70 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZomatoAnalyser;
+			productName = ZomatoAnalyser;
+			productReference = DE1AD5E81EF476360055BF4A /* ZomatoAnalyser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE1AD5E01EF476360055BF4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Aadit Kapoor";
+				TargetAttributes = {
+					DE1AD5E71EF476360055BF4A = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = M7EVY68MD5;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DE1AD5E31EF476360055BF4A /* Build configuration list for PBXProject "ZomatoAnalyser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE1AD5DF1EF476360055BF4A;
+			productRefGroup = DE1AD5E91EF476360055BF4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE1AD5E71EF476360055BF4A /* ZomatoAnalyser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE1AD5E61EF476360055BF4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE1AD5F61EF476360055BF4A /* LaunchScreen.storyboard in Resources */,
+				DE1AD5F31EF476360055BF4A /* Assets.xcassets in Resources */,
+				DE1AD5F11EF476360055BF4A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05AFEEBE3D10786864775B61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZomatoAnalyser/Pods-ZomatoAnalyser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		114BF4B45C4F53E9B2B60C70 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZomatoAnalyser/Pods-ZomatoAnalyser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B147F2EB7E82D71CF35138BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE1AD5E41EF476360055BF4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE1AD5EE1EF476360055BF4A /* ViewController.swift in Sources */,
+				DE1AD5FE1EF4788D0055BF4A /* URLCreator.swift in Sources */,
+				DE1AD6001EF47EE70055BF4A /* SearchViewController.swift in Sources */,
+				DE1AD5EC1EF476360055BF4A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DE1AD5EF1EF476360055BF4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE1AD5F01EF476360055BF4A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE1AD5F41EF476360055BF4A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE1AD5F51EF476360055BF4A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE1AD5F81EF476360055BF4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE1AD5F91EF476360055BF4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE1AD5FB1EF476360055BF4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF42DDF665F85CC9F0DF8C4B /* Pods-ZomatoAnalyser.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M7EVY68MD5;
+				INFOPLIST_FILE = ZomatoAnalyser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aaditkapoor.ZomatoAnalyser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DE1AD5FC1EF476360055BF4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F92490594FA2F8AFD8B56FDC /* Pods-ZomatoAnalyser.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M7EVY68MD5;
+				INFOPLIST_FILE = ZomatoAnalyser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aaditkapoor.ZomatoAnalyser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE1AD5E31EF476360055BF4A /* Build configuration list for PBXProject "ZomatoAnalyser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE1AD5F81EF476360055BF4A /* Debug */,
+				DE1AD5F91EF476360055BF4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE1AD5FA1EF476360055BF4A /* Build configuration list for PBXNativeTarget "ZomatoAnalyser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE1AD5FB1EF476360055BF4A /* Debug */,
+				DE1AD5FC1EF476360055BF4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE1AD5E01EF476360055BF4A /* Project object */;
+}

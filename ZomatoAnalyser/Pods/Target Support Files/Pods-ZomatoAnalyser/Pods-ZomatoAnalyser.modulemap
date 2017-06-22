@@ -1,0 +1,6 @@
+framework module Pods_ZomatoAnalyser {
+  umbrella header "Pods-ZomatoAnalyser-umbrella.h"
+
+  export *
+  module * { export * }
+}

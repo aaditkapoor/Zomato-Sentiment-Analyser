@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uqF-kk-Ejj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZomatoAnalyser" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LvF-q2-3cm">
+                                <rect key="frame" x="8" y="104" width="360" height="42"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="do0-zW-WHv">
+                                <rect key="frame" x="52" y="619" width="271" height="28"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Developed By Aadit Kapoor">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="AvenirNext-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.75" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZJo-o3-hxj">
+                                <rect key="frame" x="0.0" y="227" width="374.5" height="213"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="213" id="Cwq-rj-dwW"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">ZomatoMe Analyses the reviews of a particular restaurant using sentiment analysis  and presents you with a feedback whether the customers liked the place or not.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="AvenirNext-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYG-9Z-yxE">
+                                <rect key="frame" x="16" y="501" width="343" height="53"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="tXA-25-3Nk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
+                                <state key="normal" title="Search Restaurants">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eH3-rm-UKR"/>
+                                    <segue destination="rO1-Pb-YKi" kind="show" identifier="searchSegue" id="VBj-4H-6eM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="do0-zW-WHv" secondAttribute="bottom" constant="20" id="2sd-yj-4il"/>
+                            <constraint firstItem="do0-zW-WHv" firstAttribute="top" secondItem="UYG-9Z-yxE" secondAttribute="bottom" constant="65" id="Gpr-Gf-mn3"/>
+                            <constraint firstItem="ZJo-o3-hxj" firstAttribute="centerX" secondItem="LvF-q2-3cm" secondAttribute="centerX" id="Iri-Wg-mZT"/>
+                            <constraint firstItem="UYG-9Z-yxE" firstAttribute="top" secondItem="ZJo-o3-hxj" secondAttribute="bottom" constant="61" id="VbT-lA-ryp"/>
+                            <constraint firstItem="ZJo-o3-hxj" firstAttribute="top" secondItem="LvF-q2-3cm" secondAttribute="bottom" constant="81" id="aYe-UV-SiT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UYG-9Z-yxE" secondAttribute="trailing" id="d6K-rh-mI8"/>
+                            <constraint firstItem="ZJo-o3-hxj" firstAttribute="centerX" secondItem="do0-zW-WHv" secondAttribute="centerX" id="e5x-2I-Zqa"/>
+                            <constraint firstItem="ZJo-o3-hxj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="feU-ST-Qsv"/>
+                            <constraint firstItem="LvF-q2-3cm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="104" id="nNX-Zv-gid"/>
+                            <constraint firstItem="ZJo-o3-hxj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pAv-1G-zj0"/>
+                            <constraint firstItem="UYG-9Z-yxE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uvW-at-E4z"/>
+                            <constraint firstItem="do0-zW-WHv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yzS-xY-Vcw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="cto-zR-jLY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072.8" y="138.0809595202399"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="yH0-ZK-qvW">
+            <objects>
+                <viewController id="rO1-Pb-YKi" customClass="SearchViewController" customModule="ZomatoAnalyser" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MMy-Ah-ikh"/>
+                        <viewControllerLayoutGuide type="bottom" id="sPU-wW-Qo3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tNL-WG-7el">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" searchBarStyle="prominent" text="" placeholder="Search Restaurants" translatesAutoresizingMaskIntoConstraints="NO" id="L5U-Oq-Knz">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="search"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ef7-QQ-lPv">
+                                <rect key="frame" x="0.0" y="108" width="375" height="559"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="ySw-br-wG6" style="IBUITableViewCellStyleDefault" id="4uS-Ca-DDI">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4uS-Ca-DDI" id="lfg-cg-82g">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" id="ySw-br-wG6">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ef7-QQ-lPv" firstAttribute="top" secondItem="L5U-Oq-Knz" secondAttribute="bottom" id="33A-qG-InG"/>
+                            <constraint firstItem="L5U-Oq-Knz" firstAttribute="leading" secondItem="tNL-WG-7el" secondAttribute="leading" id="9DZ-Qo-48B"/>
+                            <constraint firstItem="Ef7-QQ-lPv" firstAttribute="trailing" secondItem="L5U-Oq-Knz" secondAttribute="trailing" id="Jw0-vT-PPm"/>
+                            <constraint firstAttribute="trailing" secondItem="L5U-Oq-Knz" secondAttribute="trailing" id="WJz-hb-nOG"/>
+                            <constraint firstItem="Ef7-QQ-lPv" firstAttribute="bottom" secondItem="sPU-wW-Qo3" secondAttribute="top" id="dSA-OF-riT"/>
+                            <constraint firstItem="L5U-Oq-Knz" firstAttribute="top" secondItem="MMy-Ah-ikh" secondAttribute="bottom" id="fgE-BW-viE"/>
+                            <constraint firstItem="Ef7-QQ-lPv" firstAttribute="leading" secondItem="L5U-Oq-Knz" secondAttribute="leading" id="ggs-gv-oBO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="L5U-Oq-Knz" id="u3g-ZM-VIW"/>
+                        <outlet property="tableView" destination="Ef7-QQ-lPv" id="j88-oV-k5i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4BT-aq-KHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1799.2" y="151.57421289355324"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OEo-Ub-j7b">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uqF-kk-Ejj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ivo-Hd-9Vd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="TjD-RD-Etg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YUh-gf-dSe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="138.0809595202399"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="360" height="360"/>
+    </resources>
+</document>
